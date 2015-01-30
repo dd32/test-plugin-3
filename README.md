@@ -1,99 +1,110 @@
-Press-This
-==========
-Posting images, links, and cat gifs will never be the same.
+Test Plugin 3
+===============
+* Contributors: dd32, githubsync
+* Donate link: http://example.com/
+* Tags: test-plugins
+* Requires at least: 4.3
+* Tested up to: 4.4
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-## Description
+Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
 
-Press This is a redesign of the Press This bookmarklet with a focus on automation and speed. It will have a simplified interface, efficient media upload, content scraping, and site switching.
+## Description #
 
-**CAUTION:** This is in super early development. Don't use on a production site. There be dragons!
+For best README.md support, the fields under the plugin title, Contributors.. Tags.. etc, should be in a similar format to this readme example. This means that there should be no characters after the : other than the value, no formatting, just a value and new line.
 
-## Contributing
+This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
 
-### Discussion and updates
+For backwards compatibility, if this section is missing, the full length of the short description will be used, and
+Markdown parsed.
 
-Discussion should mainly take place here via Issues or in the #feature-pressthis channel on Slack.
+A few notes about the sections above:
 
-Weekly updates will be posted on [make.wordpress.org/core/](https://make.wordpress.org/core/)
+*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
+*   "Tags" is a comma separated list of tags that apply to the plugin
+*   "Requires at least" is the lowest version that the plugin will work on
+*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
+higher versions... this is just the highest one you've verified.
+*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
+stable.
 
-You can see initial planning and discussion at [corepressthis.wordpress.com](https://corepressthis.wordpress.com/).
+    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
+if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
+for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
+is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
+your in-development version, without having that information incorrectly disclosed about the current stable version
+that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
 
+    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
+you put the stable version, in order to eliminate any doubt.
 
-### Development process
+## Installation
 
-Development of this plugin is done on [Github](https://github.com/MichaelArestad/Press-This). Pull requests welcome.
+This section describes how to install the plugin and get it working.
 
-Don't commit directly to `master`. Create a new branch per issue you're working on. Then, when ready open a PR for review.
+e.g.
 
-Example branches:
-```
-add/cool-thing
-fix/dumb-bug
-update/other-thing
-```
+1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
-### Setting up Grunt (compiles/autoprefixes Sass)
-1. You need to have [Sass](http://sass-lang.com/install) installed.
- * To check to see if you have it, type `sass -v` in your terminal.
- * On Mac, type 'gem install sass' in your terminal. If you get an error, try `sudo gem install sass` instead.
-* You need to have [Node.js](http://nodejs.org/) installed.
- * To check to see if you have it, type `node -v` in your terminal.
- * Download and install the package [here](http://nodejs.org/).
-* Navigate to the plugin folder in your terminal.
-* Type `npm install`, which installs Grunt and the node modules needed.
-* Type `grunt`, which starts the Watch task and compiles/autoprefixes the Sass when changes are detected.
- * You can exit grunt watch using `Control + C`
+## Frequently Asked Questions
+
+### A question that someone might have
+
+An answer to that question.
+
+### What about foo bar?
+
+Answer to foo bar dilemma.
+
+## Screenshot
+
+1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
+(or jpg, jpeg, gif).
+2. This is the second screen shot
 
 ## Changelog
 
-### 0.0.1a
- * Core architecture of the plugin/tools is an as-pure-Javascript app as possible
- * Currently AJAX driven, but ready to be switched to using the WP-API endpoints as they become available
- * Is backward compatible with the current version of the Press This bookmarklet as bundled in WP, but also bring its own, more powerful one with it
- * Can blog any web page found online, blockquoting an excerpt, including a selection of in-page images to choose from. Said images are augmented with meta data to sort them in the order the site advertises to be best
- * Overrides /wp-admin/press-this.php and its behavior, so that we’re 100% backward compatible
- * Overrides the bookmarklet JS code provided in /wp-admin/tools.php
- * Quick featured image switching
- * Saving draft and publishing
- * Image side-loading
- * **3 modes**:
-  * Direct access: quick post of sort, more to come with media and formatting tools
-  * Modal: when accessed via new bookmarklet code: will show in an iframe within the visited page itself
-  * Popup: if the currently visited page is SSL but the target install is not, we open Press This in a popup instead. We also do that if the”legacy” bookmarklet code is used. It’s pretty awesome for pressing from your sweet smartphone.
-  * Alpha level code
+### 1.0
+* A change since the previous version.
+* Another change.
 
-### 0.0.2
- * Added the start of an admin bar
- * Major code refactoring for easier code reuse and better performance/stability
- * Started backend work on Chrome extension, not functional, but a start
- * Started work on adding/editing/removing a user's different Press This instances
- * Still alpha level code
+## Upgrade Notice
 
-### 0.0.3
- * Photo upload (without page reload, and with preview), take 1!
- * Handy field for users to enter a URL to scan for media, if accessed without providing one.
- * Refined algorithm that selects what picts to present as interesting/worthy to the user.
- * Continued work on adding/editing/removing a user's different Press This instances.
- * Major UI/UX improvements.
- * Major backend improvements.
- * Still alpha level code.
+### 1.0
+Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
 
-### 0.0.4
- * Dropped the iframe mode to an experimental file devs can play with, now defaulting to popup for better security and less fighting browsers on sameorigin policies.
- * Improved UI/UX: new icons and related behaviors, etc.
- * Better photo selection experience, including when uploading.
- * Ability to dismiss having a photo.
- * Lots of backend work to start moving towards multiple media types and selection.
- * Still alpha level code.
+## Arbitrary section
 
-### 0.0.4.1
- * PHP compatibility updates: some of our syntax could error on some PP versions.
- * Still alpha level code.
+You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
+plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
+"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
 
-### 0.0.4.2
- * Added <meta name="viewport" content="width=device-width"> to make it extra responsive on mobile.
- * Still alpha level code.
+## A brief Markdown Example
 
-### 0.0.4.3
- * Improving our github to svn tool flow
- * Still alpha level code.
+Ordered list:
+
+1. Some feature
+1. Another feature
+1. Something else about the plugin
+
+Unordered list:
+
+* something
+* something else
+* third thing
+
+Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
+Titles are optional, naturally.
+
+[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
+            "Markdown is what the parser uses to process much of the readme file"
+
+Markdown uses email style notation for blockquotes and I've been told:
+> Asterisks for *emphasis*. Double it up  for **strong**.
+
+`<?php code(); // goes in backticks ?>`
