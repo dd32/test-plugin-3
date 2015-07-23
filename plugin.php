@@ -1,14 +1,14 @@
 <?php
 /*
-Plugin Name: TEST PLUGIN 3
-Plugin URI: http://example.com/
-Description: Used by millions, Test Plugins are an important part of the world
-Version: 1.1-20150204
-Author: Dion Hulse
-Author URI: http://dd32.id.au/
-License: GPLv2 or later
-Text Domain: test-plugin
-*/
+ * Plugin Name: TEST PLUGIN 3
+ * Plugin URI: http://example.com/
+ * Description: Used by millions, Test Plugins are an important part of the world
+ * Version: 1.1-20150204
+ * Author: Dion Hulse
+ * Author URI: http://dd32.id.au/
+ * License: GPLv2 or later
+ * Text Domain: test-plugin
+ */
 
 /*
 This program is free software; you can redistribute it and/or
