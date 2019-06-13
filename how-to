@@ -1,0 +1,18 @@
+# Ensure we're on master
+git checkout master
+
+# Create a new assets branch
+git checkout --orphan assets
+
+# Remove the now untracked assets: WARNING
+git rm -rf .
+
+# Add files
+touch screenshot-1.png
+
+# ..and commit it up to Github:
+git add screenshot-1.png
+git commit -m "Adding screenshot #1"
+git push
+
+See https://gist.github.com/joncardasis/e6494afd538a400722545163eb2e1fa5
