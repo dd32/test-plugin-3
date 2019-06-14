@@ -7,6 +7,7 @@ Test Plugin 3
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Donate link: http://example.com/
+* Stable Tag: v0.1
 
 Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here please.
 
