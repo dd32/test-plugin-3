@@ -1,11 +1,11 @@
 <?php
 /*
  * Plugin Name: TEST PLUGIN 3
- * Plugin URI: http://example.com/
+ * Plugin URI: https://example.com/
  * Description: Used by millions, Test Plugins are an important part of the world
- * Version: 1.1-20150204
+ * Version: 0.2
  * Author: Dion Hulse
- * Author URI: http://dd32.id.au/
+ * Author URI: https://dd32.id.au/
  * License: GPLv2 or later
  * Text Domain: test-plugin
  */
@@ -28,5 +28,3 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 add_action( 'init', function() { echo '<h1>HELLO WORLD</h1>'; } );
 add_action( 'admin_init', function() { echo '<h2>Hello Admin!</h1>'; } );
-
-// Auto-sync'd by wporg
