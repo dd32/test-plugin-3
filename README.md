@@ -46,9 +46,9 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+1. Open your WordPress Dashboard
+1. Select Plugins -> Add New
+1. Search for the plugin name, Voila!
 
 ## Frequently Asked Questions
 
@@ -60,6 +60,10 @@ An answer to that question.
 
 Answer to foo bar dilemma.
 
+### What if my question isn't answered here?
+
+Good luck.
+
 ## Screenshot
 
 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
@@ -70,13 +74,13 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 ## Changelog
 
-### 1.0
+### 0.1
 * A change since the previous version.
 * Another change.
 
 ## Upgrade Notice
 
-### 1.0
+### 0.1
 Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
 
 ## Arbitrary section
@@ -109,3 +113,5 @@ Markdown uses email style notation for blockquotes and I've been told:
 > Asterisks for *emphasis*. Double it up  for **strong**.
 
 `<?php code(); // goes in backticks ?>`
+
+This is a living breathing document, please treat it with care.
