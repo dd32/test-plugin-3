@@ -1,0 +1,17 @@
+name: Update Changelog and upload Gutenberg plugin to WordPress.org plugin repo
+
+on:
+    workflow_dispatch
+
+jobs:
+    upload:
+        name: SVN Info
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install Subversion
+              run: |
+                  sudo apt-get update -y && sudo apt-get install -y subversion
+            - name: SVN Info
+              run: |
+                  svn --version --verbose
+                  cat ~/.subversion/config
