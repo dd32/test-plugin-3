@@ -13,5 +13,4 @@ jobs:
                   sudo apt-get update -y && sudo apt-get install -y subversion
             - name: SVN Info
               run: |
-                  svn --version --verbose
-                  cat ~/.subversion/config
+                  svn --version --verbose 2>&1
